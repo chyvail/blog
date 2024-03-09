@@ -1,3 +1,8 @@
+/**
+ * Search page for the application.
+ * Displays a search page with filterd posts based on keywords
+ */
+
 import React from "react";
 import Heading from "../../components/Heading";
 import blogData from "@/app/data/blogData";
@@ -15,8 +20,6 @@ const SearchPage: React.FC<SearchProps> = ({ params }) => {
   const filteredPosts = blogData.filter((posts) =>
     posts.title.toLowerCase().includes(text.toLocaleLowerCase())
   );
-
-  console.log(filteredPosts);
 
   return (
     <div className="text-center">

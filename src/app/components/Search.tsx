@@ -1,3 +1,8 @@
+/**
+ * Search component for the application.
+ * Displays an input with a search icon
+ */
+
 import Link from "next/link";
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";

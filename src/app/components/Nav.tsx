@@ -6,12 +6,19 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import Search from "./Search";
+import Modal from "./Modal";
 
 export default function Nav() {
   const path = usePathname();
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    console.log("Clicked");
+    setShowModal(true);
+  };
   return (
     <>
       <div className="bg-slate-900 h-16 flex items-center">
@@ -25,7 +32,7 @@ export default function Nav() {
                 <Link href={"/"}>Blogs</Link>
               </div>
               <Search />
-              <button type="button" className="">
+              <button type="button" className="" onClick={handleClick}>
                 Create Blog Post
               </button>
             </div>
@@ -41,6 +48,7 @@ export default function Nav() {
           </div>
         </div>
       ) : null}
+      {showModal && <Modal />}
     </>
   );
 }
