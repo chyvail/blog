@@ -4,6 +4,7 @@
  */
 
 type BlogPost = {
+  id: number;
   title: string;
   date: string;
   slug: string;
@@ -13,6 +14,7 @@ type BlogPost = {
 
 const blogData: BlogPost[] = [
   {
+    id: 1,
     title: "What is FrontEnd Development",
     date: "2024-03-09",
     slug: "what-is-frontend-development",
@@ -22,6 +24,7 @@ const blogData: BlogPost[] = [
       "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    id: 2,
     title: "Introduction to CSS Grid Layout",
     date: "2024-03-07",
     slug: "introduction-to-css-grid-layout",
@@ -31,6 +34,7 @@ const blogData: BlogPost[] = [
       "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    id: 3,
     title: "JavaScript Best Practices",
     date: "2024-03-06",
     slug: "javascript-best-practices",
@@ -40,6 +44,7 @@ const blogData: BlogPost[] = [
       "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    id: 4,
     title: "10 Tips for Effective Web Design",
     date: "2024-03-08",
     slug: "tips-for-effective-web-design",
@@ -49,6 +54,7 @@ const blogData: BlogPost[] = [
       "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    id: 5,
     title: "React Hooks Tutorial",
     date: "2024-03-08",
     slug: "react-hooks-tutorial",
