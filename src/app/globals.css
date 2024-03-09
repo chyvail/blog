@@ -13,6 +13,12 @@
   width: 100%;
 }
 
+.individual-post img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* Show elipsis on content */
 
 .post-title {

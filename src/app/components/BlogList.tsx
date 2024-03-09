@@ -6,6 +6,7 @@
 import React from "react";
 import Heading from "./Heading";
 import blogData from "../data/blogData";
+import Link from "next/link";
 
 export default function BlogList() {
   return (
@@ -31,9 +32,11 @@ export default function BlogList() {
                     <div>5 min Read</div>
                   </h6>
                   <div className="mt-2">
-                    <h4 className="text-2xl font-extrabold text-slate-900 post-title">
-                      {post.title}
-                    </h4>
+                    <Link href={`/blog/${post.slug}`}>
+                      <h4 className="text-2xl font-extrabold text-slate-900 post-title">
+                        {post.title}
+                      </h4>
+                    </Link>
                     <p className="font-normal mt-2 flex justify-between text-gray-600 text-base post-description">
                       {post.content}
                     </p>
