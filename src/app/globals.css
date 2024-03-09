@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-container {
+  width: 96%;
+}
+
+.blog img {
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Show elipsis on content */
+
+.post-title {
+  -webkit-line-clamp: 1;
+}
+
+.post-description {
+  -webkit-line-clamp: 2;
+}
+
+.post-description,
+.post-title {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
