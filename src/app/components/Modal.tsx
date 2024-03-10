@@ -13,7 +13,10 @@ export default function Modal() {
     <div className="modal fixed w-full h-full top-0 left-0 flex items-center justify-center">
       <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
-      <div className="modal-container bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto relative custom-modal">
+      <div
+        className="modal-container bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto relative custom-modal"
+        style={{ maxHeight: "80vh" }}
+      >
         <button className="modal-close absolute top-0 right-5 mt-4 ml-4 text-slate-900 text-2xl">
           <IoCloseCircle />
         </button>
@@ -52,7 +55,7 @@ export default function Modal() {
             <div className="flex items-center justify-center w-full">
               <label
                 htmlFor="dropzone-file"
-                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500"
               >
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                   <svg
