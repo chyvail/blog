@@ -10,14 +10,18 @@ import React, { useState } from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import Search from "./Search";
 import Modal from "./Modal";
+import { BiSolidPlusCircle } from "react-icons/bi";
 
 export default function Nav() {
   const path = usePathname();
   const [showModal, setShowModal] = useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    console.log("Clicked");
+  const handleClick = () => {
     setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
   return (
     <>
@@ -27,7 +31,7 @@ export default function Nav() {
             <div>
               <h6 className="">Blog Posts</h6>
             </div>
-            <div className="flex items-center">
+            <div className="items-center hidden lg:flex md:flex">
               <div>
                 <Link href={"/"}>Blogs</Link>
               </div>
@@ -35,6 +39,9 @@ export default function Nav() {
               <button type="button" className="" onClick={handleClick}>
                 Create Blog Post
               </button>
+            </div>
+            <div className="lg:hidden md:hidden cursor-pointer text-2xl">
+              <BiSolidPlusCircle onClick={handleClick} />
             </div>
           </nav>
         </div>
@@ -48,7 +55,7 @@ export default function Nav() {
           </div>
         </div>
       ) : null}
-      {showModal && <Modal />}
+      {showModal && <Modal onClose={handleCloseModal} />}
     </>
   );
 }

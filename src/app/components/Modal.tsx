@@ -8,16 +8,23 @@ import { IoCloseCircle } from "react-icons/io5";
 import TextInput from "./TextInput";
 import Button from "./Button";
 
-export default function Modal() {
+interface ModalProps {
+  onClose: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <div className="modal fixed w-full h-full top-0 left-0 flex items-center justify-center">
       <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
       <div
-        className="modal-container bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto relative custom-modal"
+        className="bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto relative custom-modal sm:w-1/2 "
         style={{ maxHeight: "80vh" }}
       >
-        <button className="modal-close absolute top-0 right-5 mt-4 ml-4 text-slate-900 text-2xl">
+        <button
+          className="modal-close absolute top-0 right-5 mt-4 ml-4 text-slate-900 text-2xl"
+          onClick={onClose}
+        >
           <IoCloseCircle />
         </button>
         <div className="modal-content py-4 text-left px-6">
@@ -100,4 +107,6 @@ export default function Modal() {
       </div>
     </div>
   );
-}
+};
+
+export default Modal;

@@ -63,6 +63,46 @@ const blogData: BlogPost[] = [
     image:
       "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
+  {
+    id: 6,
+    title: "Introduction to Machine Learning",
+    date: "2024-03-10",
+    slug: "introduction-to-machine-learning",
+    content:
+      "Learn the fundamentals of machine learning, including supervised and unsupervised learning techniques.",
+    image:
+      "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 7,
+    title: "Cybersecurity Best Practices",
+    date: "2024-03-09",
+    slug: "cybersecurity-best-practices",
+    content:
+      "Discover essential cybersecurity best practices to protect your organization's data and infrastructure.",
+    image:
+      "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 8,
+    title: "Data Visualization Techniques",
+    date: "2024-03-07",
+    slug: "data-visualization-techniques",
+    content:
+      "Explore different data visualization techniques and tools to effectively communicate insights from your data.",
+    image:
+      "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 9,
+    title: "Ethical Hacking Basics",
+    date: "2024-03-06",
+    slug: "ethical-hacking-basics",
+    content:
+      "Learn the fundamentals of ethical hacking, including penetration testing and vulnerability assessment.",
+    image:
+      "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
 
 export default blogData;
